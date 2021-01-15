@@ -5,24 +5,24 @@ import NewsCard from './NewsCard/NewsCard';
 import useStyles from './styles.js';
 
 const infoCards = [
-  { color: '#1eb6e5', title: 'Latest News', text: 'Show me the latest news' },
   {
-    color: '#1eb6e5',
-    title: 'News by categories',
-    info: 'Health, Science, Sports, Technology, etc.',
-    text: 'Show me the latest Technology news!',
+    title: 'Get the latest News',
+    text: "'Show me the latest news' or 'Give me the most recent news' ",
   },
   {
-    color: '#1eb6e5',
-    title: 'News by terms',
-    info: 'Java, JavaScript, React, Vue, Nuxt, etc.',
-    text: "What's new about Vue 3?",
+    title: 'Get news by categories',
+    info: 'Health, Science, Sports, Technology..',
+    text: "'Show me the latest Technology news!'",
   },
   {
-    color: '#1eb6e5',
-    title: 'News by sources',
-    info: 'CNN, Wired, BBC News, Time, etc.',
-    text: 'Show me the news from CNN',
+    title: 'Get news by terms',
+    info: 'Java, JavaScript, React, Vue, Nuxt..',
+    text: "'What's new about Vue 3?'",
+  },
+  {
+    title: 'Get news by sources',
+    info: 'CNN, Wired, BBC News, Time..',
+    text: "'Show me the news from CNN'",
   },
 ];
 
@@ -57,12 +57,13 @@ const NewsCards = ({ articles, activeArticle }) => {
                 </Typography>
                 {infoCard.info ? (
                   <Typography variant='h6' component='h6'>
-                    <strong>{infoCard.title.split(' ')[2]}</strong>: <br />
+                    for example: <br />
                     {infoCard.info}
                   </Typography>
                 ) : null}
                 <Typography variant='h6' component='h6'>
-                  Try saying: <br /> <i>{infoCard.text}</i>
+                  Select the microphone button and say: <br />
+                  <i>{infoCard.text}</i>
                 </Typography>
               </div>
             </Grid>
