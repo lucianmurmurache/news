@@ -11,7 +11,10 @@ export default makeStyles({
     padding: '10%',
     borderRadius: 10,
     color: 'white',
-    boxShadow: '0px 5px 11px -7px #171717, 5px 5px 15px 5px rgba(0,0,0,0)',
+    backgroundColor: '#1eb6e5',
+    transition: 'box-shadow 0.5s',
+    boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)',
+    '&:hover': { boxShadow: '0px 20px 40px -10px rgba(0, 0, 0, 0.4)' },
   },
   infoCard: {
     display: 'flex',
